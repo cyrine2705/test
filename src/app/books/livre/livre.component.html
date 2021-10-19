@@ -1,0 +1,7 @@
+<ul>
+    <li>
+        <div>livre num {{i+1}} :<strong>{{p.title}}</strong> Prix:{{p.price}} DT</div>
+        <div><img [src]="p.cover" />
+        <button (click)="finalPrice()" [ngClass]="{'btn btn-success':p.reduction>0,'btn btn-warning':p.reduction==0}">Prix final</button><span>{{txt}}</span></div>
+    </li>
+</ul>

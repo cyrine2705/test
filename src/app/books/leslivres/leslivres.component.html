@@ -1,0 +1,4 @@
+<h1>Liste des livres</h1>
+<ng-container *ngFor="let p of allLivres , index as i">
+    <srai-livre [liv]="p" [indice]="i"></srai-livre>
+</ng-container>
